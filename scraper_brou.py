@@ -30,12 +30,12 @@ def query():
 
     #creamos diccionario (map)
     datos = {'Moneda':['Compra','Venta']}
-    monedas = ['Dolar','Dolar eBrou','Guarani']
+    monedas = ['Dolar','Dolar eBrou','','','','','','Guarani']
     for i,j in enumerate(cots):
         if i%5 == 0:
             try:
                 if i//5 in [1,2,8]:
-                    j = monedas[i//5]
+                    j = monedas[i//5+1]
                 datos[j] = [float(cots[i+1]),float(cots[i+2])]
             except:
                 try:

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-from flask import Flask
+import flask
 #from fastapi import FastAPI
 #from fastapi.responses import HTMLResponse
 import scraper_brou
 import scraper_bs
 
 
-app = Flask(__name__)
+app = flask.Flask(__name__)
 
 #app = FastAPI()
 

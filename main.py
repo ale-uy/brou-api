@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-from fastapi import FastAPI
-from fastapi.responses import HTMLResponse
+from flask import Flask
+#from fastapi import FastAPI
+#from fastapi.responses import HTMLResponse
 import scraper_brou
 import scraper_bs
 
 
-app = FastAPI()
+app = Flask(__name__)
+
+#app = FastAPI()
 
 @app.get("/v1")
 def api_brou():
